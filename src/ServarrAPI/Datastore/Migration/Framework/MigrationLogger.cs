@@ -53,7 +53,7 @@ namespace ServarrAPI.Datastore.Migration.Framework
 
         protected override void WriteError(Exception exception)
         {
-            _logger.LogInformation("Error", exception);
+            _logger.LogInformation("Error: {Exception}", exception);
         }
     }
 }
